@@ -66,6 +66,10 @@ app.get('/', (req, res) => {
     res.send('server is running')
 });
 
+app.get('/hero', (req, res) => {
+    res.send('heroku activated')
+});
+
 app.listen(port, () => {
     console.log('server is running on port', port)
 })
